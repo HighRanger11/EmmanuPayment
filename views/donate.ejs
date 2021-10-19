@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="amount" style="visibility: hidden;" value="<%=amount%>"><%=amount%></button>
+     <!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+     <script src="https://www.paypal.com/sdk/js?client-id=AajPB4a_HNMGV3npuyS7Ohc7ikmdunGTsFuRKQHKJVGy3BKFEiiKOQPyYw_59g7Y-kN1p1flamP7xp_1&currency=USD"></script>
+
+     <!-- Set up a container element for the button -->
+     <div id="paypal-button-container" class="center">
+        <h1><%=title%></h1>
+        <br>
+      </div>
+</body>
+
+<script src="script.js"></script>
+</html>
